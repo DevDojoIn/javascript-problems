@@ -7,9 +7,4 @@ This repository contains a collection of JavaScript coding problems along with t
 ✅ Well-structured and reusable `script.js` for centralized logic  
 ✅ Beginner-friendly and progressively challenging problems  
 
-### **How to Use:**  
-1. Clone or fork the repository.  
-2. Open any problem's HTML file in a browser to interact with it.  
-3. Modify `script.js` to add new solutions or improve existing ones.  
-
 💡 Contributions & suggestions are welcome! Let's learn JavaScript together. 🚀  
