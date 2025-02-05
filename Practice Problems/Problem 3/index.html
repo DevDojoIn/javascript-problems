@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Program for Finding Total Surface Area and Volume of Cuboid</title>
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <h2>
+      Problem 3: Write a program to find the total surface area and volume of a
+      cuboid.
+    </h2>
+    <h3>Solution:</h3>
+    <pre><code>
+    function calculateCuboid(length, breadth, height) {
+        const totalSurface = 2 * (length * breadth + breadth * height + length * height);
+        const volume = length * breadth * height;
+        return `The TSA of cuboid is ${totalSurface} and the volume of cuboid is ${volume}.`;
+    }
+    console.log(calculateCuboid(5, 10, 6));
+    </code></pre>
+    <h3>Code Breakdown:</h3>
+    <ul>
+      <li>
+        <code>calculateCuboid(length, breadth, height)</code> is a function that
+        takes three parameters: <strong>length</strong>,
+        <strong>breadth</strong>, and <strong>height</strong>.
+      </li>
+      <li>
+        The <strong>Total Surface Area (TSA)</strong> of a cuboid is calculated
+        using the formula:<br />
+        <code>2 * (length * breadth + breadth * height + length * height)</code
+        >.
+      </li>
+      <li>
+        The <strong>Volume</strong> of the cuboid is calculated using the
+        formula:<br />
+        <code>length * breadth * height</code>.
+      </li>
+      <li>
+        The function returns a formatted string containing both the TSA and the
+        volume.
+      </li>
+      <li>
+        The function is called with values <code>5, 10, 6</code>, and the result
+        is printed using <code>console.log()</code>.
+      </li>
+    </ul>
+    <h3>Expected Output in Console:</h3>
+    <p>
+      <code>The TSA of cuboid is 280 and the volume of cuboid is 300.</code>
+    </p>
+    <h3>Implementation:</h3>
+    <input type="number" id="length" placeholder="Enter length" />
+    <input type="number" id="breadth" placeholder="Enter breadth" />
+    <input type="number" id="height" placeholder="Enter height" />
+    <button onclick="calculateCuboid()">Calculate</button>
+    <p id="result"></p>
+    <!-- Including the JS code inline -->
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -21,6 +21,32 @@
     const sphereVolume = calculateVolume(radius);
     console.log(`The volume of the sphere with radius ${radius} is ${sphereVolume.toFixed(2)} cubic units.`);
         </code></pre>
+    <h3>Code Breakdown:</h3>
+    <ul>
+      <li>
+        <code>calculateVolume(radius)</code> is a function that takes one
+        parameter: <strong>radius</strong>.
+      </li>
+      <li>
+        The <strong>Volume</strong> of a sphere is calculated using the
+        formula:<br />
+        <code>(4 / 3) * Math.PI * Math.pow(radius, 3)</code>.
+      </li>
+      <li>The function returns the calculated volume.</li>
+      <li>
+        The function is called with the value <code>5</code>, and the result is
+        stored in <code>sphereVolume</code>.
+      </li>
+      <li>
+        The output is printed in the console using <code>console.log()</code>,
+        displaying the volume rounded to two decimal places.
+      </li>
+    </ul>
+
+    <h3>Expected Output in Console:</h3>
+    <p>
+      <code>The volume of the sphere with radius 5 is 523.60 cubic units.</code>
+    </p>
     <h3>Implementation of code: <br /></h3>
     <p>Enter the radius to calculate the volume of a sphere:</p>
     <input type="number" id="radius" placeholder="Enter radius" />

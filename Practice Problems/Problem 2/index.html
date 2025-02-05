@@ -13,19 +13,52 @@
     </h2>
     <h3>Solution:</h3>
     <pre><code>
-      function calculateRectangle(length, width) {
-        // Calculate area and perimeter
-        const area = length * width;
-        const perimeter = 2 * (length + width);
+    function calculateRectangle(length, width) {
+      // Calculate area and perimeter
+      const area = length * width;
+      const perimeter = 2 * (length + width);
       
-        // Display the results
-        console.log("Area: " + area + " square units");
-        console.log("Perimeter: " + perimeter + " units");
+      // Display the results
+      console.log("Area: " + area + " square units");
+      console.log("Perimeter: " + perimeter + " units");
       }
       
       // Example usage
       calculateRectangle(10, 5);        
     </code></pre>
+    <h3>Code Breakdown:</h3>
+    <ul>
+      <li>
+        <code>calculateRectangle(length, width)</code> is a function that takes
+        two parameters: <strong>length</strong> and <strong>width</strong>.
+      </li>
+      <li>
+        The <strong>Area</strong> of the rectangle is calculated using the
+        formula:<br />
+        <code>area = length * width</code>.
+      </li>
+      <li>
+        The <strong>Perimeter</strong> of the rectangle is calculated using the
+        formula:<br />
+        <code>perimeter = 2 * (length + width)</code>.
+      </li>
+      <li>
+        The function prints the calculated area and perimeter using
+        <code>console.log()</code>.
+      </li>
+      <li>
+        The function is called with values <code>10</code> and <code>5</code>,
+        and the result is printed in the console.
+      </li>
+    </ul>
+
+    <h3>Expected Output in Console:</h3>
+    <p>
+      <code
+        >The area of the rectangle is 50 square units, and the perimeter is 30
+        units.</code
+      >
+    </p>
     <h3>Implementation:</h3>
     <p>Enter length and width of the rectangle:</p>
     <input type="number" id="length" placeholder="Enter length" />
@@ -33,5 +66,5 @@
     <button onclick="calculateRectangle()">Calculate</button>
     <p id="result"></p>
   </body>
-  <script src="problem2.js"></script>
+  <script src="script.js"></script>
 </html>
