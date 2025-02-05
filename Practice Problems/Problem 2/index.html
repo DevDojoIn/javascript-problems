@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Program for displaying area and perimeter of a rectangle.</title>
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+
+  <body>
+    <h2>
+      Problem 2:Write a js program to display area and perimeter of a rectangle.
+    </h2>
+    <h3>Solution:</h3>
+    <pre><code>
+      function calculateRectangle(length, width) {
+        // Calculate area and perimeter
+        const area = length * width;
+        const perimeter = 2 * (length + width);
+      
+        // Display the results
+        console.log("Area: " + area + " square units");
+        console.log("Perimeter: " + perimeter + " units");
+      }
+      
+      // Example usage
+      calculateRectangle(10, 5);        
+    </code></pre>
+    <h3>Implementation:</h3>
+    <p>Enter length and width of the rectangle:</p>
+    <input type="number" id="length" placeholder="Enter length" />
+    <input type="number" id="width" placeholder="Enter width" />
+    <button onclick="calculateRectangle()">Calculate</button>
+    <p id="result"></p>
+  </body>
+  <script src="problem2.js"></script>
+</html>

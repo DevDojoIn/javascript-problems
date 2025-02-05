@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS program for displaying volume of sphere</title>
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <h2>Problem 1: Write a JS program to display volume of sphere</h2>
+    <h3>Solution:</h3>
+    <pre><code>
+    function calculateVolume(radius) {
+        // Calculate the volume using the formula: V = (4/3) * π * r^3
+        const volume = (4 / 3) * Math.PI * Math.pow(radius, 3);
+        return volume;
+    }
+    
+    // Example usage
+    const radius = 5; // You can change this value to any radius you want
+    const sphereVolume = calculateVolume(radius);
+    console.log(`The volume of the sphere with radius ${radius} is ${sphereVolume.toFixed(2)} cubic units.`);
+        </code></pre>
+    <h3>Implementation of code: <br /></h3>
+    <p>Enter the radius to calculate the volume of a sphere:</p>
+    <input type="number" id="radius" placeholder="Enter radius" />
+    <button onclick="calculateVolume()">Calculate Volume</button>
+    <p id="result"></p>
+  </body>
+  <script src="script.js"></script>
+</html>

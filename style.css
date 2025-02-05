@@ -1,0 +1,11 @@
+      pre {
+        background-color: #f4f4f4;
+        border: 1px solid #ccc;
+        padding: 10px;
+        font-family: monospace;
+        white-space: pre-wrap; /* Makes the text wrap if it's too long */
+      }
+      code {
+        font-family: monospace;
+        font-size: 1em;
+      }
